@@ -13,7 +13,16 @@
     {
       devShells = forEachSupportedSystem ({ pkgs }: {
         default = pkgs.mkShell {
-          packages = with pkgs; [ bootdev-cli ];
+          packages = with pkgs; [
+            bootdev-cli
+
+            python3Packages.python-lsp-server
+
+            # LSP server plugins of interest:
+            pkgs.python3Packages.pylsp-mypy
+            pkgs.python3Packages.pylsp-rope
+            pkgs.python3Packages.python-lsp-ruff
+          ];
         };
       });
     };

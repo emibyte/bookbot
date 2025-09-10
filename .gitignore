@@ -1,2 +1,7 @@
 .direnv
 .envrc
+/books
+
+.mypy_cache
+__pycache__
+.ropeproject
