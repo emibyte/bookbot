@@ -1,5 +1,5 @@
 {
-  description = "bootdotdev cli";
+  description = "environment for a small python project";
 
   inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
