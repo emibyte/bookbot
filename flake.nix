@@ -14,8 +14,6 @@
       devShells = forEachSupportedSystem ({ pkgs }: {
         default = pkgs.mkShell {
           packages = with pkgs; [
-            bootdev-cli
-
             python3Packages.python-lsp-server
 
             # LSP server plugins of interest:
